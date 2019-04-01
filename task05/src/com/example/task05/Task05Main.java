@@ -1,15 +1,22 @@
 package com.example.task05;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 
 public class Task05Main {
-    public static void main(String[] args) throws IOException {
-        String pathToFile = args[0]; // "/home/user/file.txt"
+    public static void main(String[] args) {
+        String pathToFile = args[0];
 
-        String s = readFile(pathToFile);
-        System.out.println(s);
+        try {
+            String s = readFile(pathToFile);
+            System.out.println(s);
+        }
+        catch (FileNotFoundException e){
+            //Чем отличаются println и print с \n
+            System.out.print("файл \"" + pathToFile + "\" не найден\n");
+        }
+        catch (IOException e){
+            System.out.println("произошла ошибка при чтении файла \"" + pathToFile + "\"");
+        }
     }
 
     public static String readFile(String pathToFile) throws IOException {
