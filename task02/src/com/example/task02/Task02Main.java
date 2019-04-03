@@ -10,7 +10,12 @@ public class Task02Main {
          */
     }
 
+    private static String[] months = new String[] {"зима","зима","весна","весна","весна","лето","лето","лето","осень","осень","осень","зима"};
+
     static String getSeason(int monthNumber) {
-        return "";//todo напишите здесь свою корректную реализацию этого метода, вместо существующей
+        try {
+            return months[monthNumber - 1];//todo напишите здесь свою корректную реализацию этого метода, вместо существующей
+        }
+        catch(ArrayIndexOutOfBoundsException e){ throw new IllegalArgumentException("monthNumber " + monthNumber +" is invalid, month number should be between 1..12");}
     }
 }
