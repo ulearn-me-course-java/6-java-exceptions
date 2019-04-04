@@ -1,15 +1,23 @@
 package com.example.task05;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 
 public class Task05Main {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args)  {
+        System.setProperty("line.separator", "\n");
+        //закоменнтированный ниже вывод жаловался на сепаратор \r в конце строки, из-за этого не проходил тесты
         String pathToFile = args[0]; // "/home/user/file.txt"
+        PrintStream ps = new PrintStream(System.out);
 
-        String s = readFile(pathToFile);
-        System.out.println(s);
+        try {
+            String s = readFile(pathToFile);
+            ps.println(s);
+        } catch (FileNotFoundException e){
+            //System.out.println(String.format("файл \"%s\" не найден", pathToFile));
+            ps.printf("файл \"%s\" не найден\n", pathToFile);
+        } catch (IOException e) {
+            ps.printf("произошла ошибка при чтении файла \"%s\"\n", pathToFile);
+        }
     }
 
     public static String readFile(String pathToFile) throws IOException {
