@@ -16,10 +16,10 @@ public class Task07Main {
         try {
             processor.process();
             return NONE;
+        } catch (RuntimeException re) {
+            return UNCHECKED;
         } catch (Exception e) {
-            if (e instanceof RuntimeException)
-                return UNCHECKED;
-            else return CHECKED;
+            return CHECKED;
         }
     }
 
