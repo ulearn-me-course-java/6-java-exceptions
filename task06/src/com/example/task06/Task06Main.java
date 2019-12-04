@@ -13,5 +13,4 @@ public class Task06Main {
         StackTraceElement[] trace = Thread.currentThread().getStackTrace();
         System.out.print(trace[2].getMethodName());
     }
-
 }
