@@ -11,6 +11,11 @@ public class Task02Main {
     }
 
     static String getSeason(int monthNumber) {
-        return "";//todo напишите здесь свою корректную реализацию этого метода, вместо существующей
+        String[] Season = new String[]{"зима", "весна", "лето", "осень"};
+        if (monthNumber >= 1 && monthNumber <= 12) {
+            return Season[(monthNumber % 12) / 3];
+        } else {
+            throw new IllegalArgumentException("monthNumber" + " " + monthNumber + " " + "is invalid, month number should be between 1..12");
+        }
     }
 }
