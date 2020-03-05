@@ -1,6 +1,10 @@
 package com.example.task06;
 
+import java.util.logging.*;
+
 public class Task06Main {
+
+    private static final Logger LOGGER = Logger.getLogger(Task06Main.class.getName());
     public static void main(String[] args) {
         //здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
         // например вот так:
@@ -10,7 +14,7 @@ public class Task06Main {
     }
 
     void printMethodName() {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
+        System.out.print(Thread.currentThread().getStackTrace()[2].getMethodName());
     }
 
 }
