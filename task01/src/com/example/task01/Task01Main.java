@@ -11,7 +11,7 @@ public class Task01Main {
 
     static void codeWithNPE() {
         //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-        String[] str = null;
-        str[1] = "sdfghj";
+        int[] i = null;
+        i[1] = 0;
     }
 }
