@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.task03.Tests" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-03-24T09:33:17" hostname="LAPTOP-UHUVGQ4L" time="0.003">
+  <properties/>
+  <testcase name="testThrowCheckedException" classname="com.example.task03.Tests" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
