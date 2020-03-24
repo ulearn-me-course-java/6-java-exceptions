@@ -7,12 +7,12 @@ public class Task05Main {
     public static void main(String[] args) {
 
         String pathToFile = args[0]; // "/home/user/file.txt"
-        try {
+        try{
             String s = readFile(pathToFile);
             System.out.println(s);
-        } catch (FileNotFoundException e) {
-            System.out.println("файл \"" + pathToFile + "\" не найден\n");
-        } catch (IOException e) {
+        } catch (FileNotFoundException e){
+            System.out.print("файл \""+  pathToFile + "\" не найден\n");
+        } catch (IOException e){
             System.out.println("произошла ошибка при чтении файла " + pathToFile);
         }
     }
