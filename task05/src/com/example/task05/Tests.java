@@ -35,10 +35,10 @@ public class Tests {
         try {
             Task05Main.main(args);
             String actual = out.toString();
-            Assert.assertEquals("С„Р°Р№Р» \"abcd\" РЅРµ РЅР°Р№РґРµРЅ\n", actual);
+            Assert.assertEquals("файл \"abcd\" не найден\n", actual);
         } catch (Exception e) {
             if (e instanceof IOException) {
-                throw new AssertionError("РјРµС‚РѕРґ main РЅРµ РґРѕР»Р¶РµРЅ Р±СЂРѕСЃР°С‚СЊ РёСЃРєР»СЋС‡РµРЅРёРµ IOException", e);
+                throw new AssertionError("метод main не должен бросать исключение IOException", e);
             }
         }
 
