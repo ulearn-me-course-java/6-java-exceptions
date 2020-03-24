@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.task01.Tests" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-03-22T16:23:07" hostname="LAPTOP-TKPCN0IG" time="0.005">
+  <properties/>
+  <testcase name="testCodeWithNPE" classname="com.example.task01.Tests" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
