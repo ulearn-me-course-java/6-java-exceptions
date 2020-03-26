@@ -2,14 +2,26 @@ package com.example.task01;
 
 public class Task01Main {
     public static void main(String[] args) {
-        //здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
         codeWithNPE();
-         */
     }
-
+//насколько я понял, здесь требуется обратиться к null-ссылке
     static void codeWithNPE() {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
+        Object example = null;
+        example.toString();
     }
 }
+
+/* более расширенно на примере:
+public class Task01Main {
+    public static void main(String[] args) {
+        Point one = new Point();
+        System.out.print(one.getOne());
+    }
+
+class Point{
+    public static String a = null;
+    public static int getOne(){
+        return a.length();
+    }
+}
+ */
