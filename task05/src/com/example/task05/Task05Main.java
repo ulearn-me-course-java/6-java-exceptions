@@ -8,8 +8,15 @@ public class Task05Main {
     public static void main(String[] args) throws IOException {
         String pathToFile = args[0]; // "/home/user/file.txt"
 
-        String s = readFile(pathToFile);
-        System.out.println(s);
+        String s = null;
+        try {
+            s = readFile(pathToFile);
+        } catch (FileNotFoundException e) {
+            System.out.print(String.format("файл \"%s\" не найден\n", pathToFile));
+        }
+        catch (IOException e) {
+            System.out.print(String.format("произошла ошибка при чтении файла \"%s\"", pathToFile));
+        }
     }
 
     public static String readFile(String pathToFile) throws IOException {
