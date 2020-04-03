@@ -11,7 +11,22 @@ public class Task04Main {
     }
 
     static String getSeason(int monthNumber) {
-        return "";//todo напишите здесь свою корректную реализацию этого метода, вместо существующей
+        if (monthNumber > 12 || monthNumber < 1)
+            throw new MyException("monthNumber " + monthNumber + " is invalid, month number should be between 1..12");
+        else if (monthNumber>=3 && monthNumber<=5)
+            return "весна";
+        else if (monthNumber>=6&&monthNumber<=8)
+            return "лето";
+        else if (monthNumber>=9&&monthNumber<=11)
+            return "осень";
+        return "зима";
+    }
+    public static class MyException extends IllegalArgumentException {
+
+        public MyException(String message) {
+            super(message);
+        }
+
     }
 
 }
