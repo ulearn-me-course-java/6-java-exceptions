@@ -13,7 +13,7 @@ public class Task06Main {
     }
 
     void printMethodName() {
-        System.out.println(new Exception().getStackTrace()[1].getMethodName());
+        System.out.print(new Exception().getStackTrace()[1].getMethodName());
     }
 
 }
