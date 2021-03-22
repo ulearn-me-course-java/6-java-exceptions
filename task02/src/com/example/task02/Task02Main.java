@@ -13,13 +13,13 @@ public class Task02Main {
         }
         String result;
         if (monthNumber == 12 || monthNumber < 3) {
-            result = "Winter";
+            result = "зима";
         } else if (monthNumber < 6) {
-            result = "Spring";
+            result = "весна";
         } else if (monthNumber < 9) {
-            result = "Summer";
+            result = "лето";
         } else {
-            result = "Autumn";
+            result = "осень";
         }
         return result;
     }
