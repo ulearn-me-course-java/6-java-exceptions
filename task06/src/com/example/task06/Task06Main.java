@@ -10,8 +10,8 @@ public class Task06Main {
     }
 
     void printMethodName() {
-        String methodName = new Exception().getStackTrace()[1].getMethodName();
-        System.out.println(methodName);
+        StackTraceElement ste = new Exception().getStackTrace()[1];
+        System.out.print(ste.getMethodName());
     }
 
 }
