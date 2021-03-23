@@ -6,5 +6,5 @@
 метод должен кидать исключение IllegalArgumentException с сообщение вида
 "monthNumber -5 is invalid, month number should be between 1..12"
 ```java
-static String getSeason(int monthNumber)
+//static String getSeason(int monthNumber)
 ```
