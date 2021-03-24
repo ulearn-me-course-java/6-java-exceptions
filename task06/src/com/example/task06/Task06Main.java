@@ -10,7 +10,8 @@ public class Task06Main {
     }
 
     void printMethodName() {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
+        Exception e = new Exception();
+        System.out.print(e.getStackTrace()[1].getMethodName());
     }
 
 }
