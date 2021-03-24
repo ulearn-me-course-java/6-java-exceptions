@@ -31,3 +31,11 @@ hs_err_pid*
 
 # Gradle
 .gradle
+*.xml
+task03/build/reports/tests/test/classes/com.example.task03.Tests.html
+task03/build/reports/tests/test/css/base-style.css
+task03/build/reports/tests/test/css/style.css
+*.html
+*.js
+*.bin
+*.idx
