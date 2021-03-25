@@ -19,6 +19,7 @@ public class Task07Main {
                 return "unchecked";
             return "checked";
         }
+        //return null;
         return "none";
     }
 
