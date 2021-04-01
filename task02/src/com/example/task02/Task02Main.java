@@ -9,7 +9,7 @@ public class Task02Main {
     static String getSeason(int monthNumber) {
         if (monthNumber > 12 || monthNumber < 1) {
             throw new IllegalArgumentException(String.format(
-                            "invalid monthNumber value, month number should be between 1-12, but %d", monthNumber));
+                            "monthNumber %d is invalid, month number should be between 1..12", monthNumber));
         }
 
         if (monthNumber < 3 || monthNumber == 12) {
