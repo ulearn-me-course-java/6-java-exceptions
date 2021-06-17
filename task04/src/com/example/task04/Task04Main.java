@@ -7,7 +7,7 @@ public class Task04Main {
         // например вот так:
         /*
         System.out.println(getSeason(-5));
-         */
+        */
     }
 
     static String getSeason(int monthNumber) {
