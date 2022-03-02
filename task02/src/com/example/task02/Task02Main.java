@@ -1,16 +1,21 @@
 package com.example.task02;
 
+import java.text.MessageFormat;
+
 public class Task02Main {
 
     public static void main(String[] args) {
-        //здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
         System.out.println(getSeason(-5));
-         */
     }
-
+    enum Seasons {зима, весна, лето, осень}
     static String getSeason(int monthNumber) {
-        return "";//todo напишите здесь свою корректную реализацию этого метода, вместо существующей
+        if(monthNumber > 0 && monthNumber < 13) {
+            if (monthNumber >= 1 && monthNumber <= 2 || monthNumber == 12) return Seasons.зима.toString();
+            if (monthNumber >= 3 && monthNumber <= 5) return Seasons.весна.toString();
+            if (monthNumber >= 6 && monthNumber <= 8) return Seasons.лето.toString();
+            if (monthNumber >= 9 && monthNumber <= 11) return Seasons.осень.toString();
+        }
+        throw new IllegalArgumentException(String.format
+                ("monthNumber %s is invalid, month number should be between 1..12", monthNumber));
     }
 }
