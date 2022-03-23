@@ -10,8 +10,16 @@ public class Task04Main {
          */
     }
 
-    static String getSeason(int monthNumber) {
-        return "";//todo напишите здесь свою корректную реализацию этого метода, вместо существующей
+    enum Season{
+        зима,       //12 - 2
+        весна,      //3 - 5
+        лето,       //6-8
+        осень       //9-11
     }
-
+    static String getSeason(int monthNumber) {
+        if (monthNumber >= 1 && monthNumber <= 12)
+            return Season.values()[(monthNumber % 12) / 3].name();
+        else
+            throw new MyException("monthNumber " + monthNumber + " is invalid, month number should be between 1..12");
+    }
 }
