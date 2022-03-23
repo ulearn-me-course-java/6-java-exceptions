@@ -1,5 +1,4 @@
 package com.example.task02;
-
 public class Task02Main {
 
     public static void main(String[] args) {
@@ -9,8 +8,16 @@ public class Task02Main {
         System.out.println(getSeason(-5));
          */
     }
-
+    enum Season{
+        зима,       //12 - 2
+        весна,      //3 - 5
+        лето,       //6-8
+        осень       //9-11
+    }
     static String getSeason(int monthNumber) {
-        return "";//todo напишите здесь свою корректную реализацию этого метода, вместо существующей
+        if (monthNumber >= 1 && monthNumber <= 12)
+            return Season.values()[(monthNumber % 12) / 3].name();
+        else
+            throw new IllegalArgumentException("monthNumber " + monthNumber + " is invalid, month number should be between 1..12");
     }
 }
