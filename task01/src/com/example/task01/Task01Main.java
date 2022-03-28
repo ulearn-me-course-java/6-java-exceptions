@@ -7,10 +7,6 @@ public class Task01Main {
 
     static void codeWithNPE() {
         NullPointerException ex = null;
-        try {
-            ex.getMessage();
-        }catch (Throwable e){
-            System.out.println(e.getClass());
-        }
+        ex.getMessage();
     }
 }
