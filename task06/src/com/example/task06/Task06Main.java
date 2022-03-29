@@ -2,15 +2,16 @@ package com.example.task06;
 
 public class Task06Main {
     public static void main(String[] args) {
-        //здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
+
         new Task06Main().printMethodName();
-         */
     }
 
     void printMethodName() {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
+        StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
+        System.out.println(stackTrace[0].toString());
+        System.out.println(stackTrace[1].toString());
+        System.out.println(stackTrace[2].toString());
+        System.out.print(stackTrace[2].getMethodName());
     }
 
 }
