@@ -7,7 +7,7 @@ import java.io.FileNotFoundException;
 
 public class Task05Main {
     public static void main(String[] args){
-        String pathToFile = args[0]; // "/home/user/file.txt"
+        String pathToFile = args[0];
 
         try {
             String s = readFile(pathToFile);
