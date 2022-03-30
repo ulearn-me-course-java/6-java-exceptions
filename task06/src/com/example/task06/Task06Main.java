@@ -10,8 +10,9 @@ public class Task06Main {
     }
 
     void printMethodName() {
-        Thread current = Thread.currentThread();
-        System.out.print(current.getStackTrace()[2].getMethodName());
+        //Thread current = Thread.currentThread();
+        Throwable t = new Throwable();
+        System.out.print(t.getStackTrace()[1].getMethodName());
     }
 
 }
