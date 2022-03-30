@@ -15,7 +15,7 @@ public class Task04Main {
         else if (monthNumber >= 3 && monthNumber <= 5) return "весна";
         else if (monthNumber >= 6 && monthNumber <= 8) return "лето";
         else if (monthNumber >= 9 && monthNumber <= 11) return "осень";
-        else throw new MyException(String.format("monthNumber %d is invalid, month number should be between 1..12", monthNumber));
+        else throw new MyException(monthNumber);
     }
 
 }
