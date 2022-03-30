@@ -8,8 +8,11 @@ public class Processor {
         Random rnd = new Random();
         if (rnd.nextBoolean()) {
             throw new RuntimeException();
-        } else {
+        } else if (rnd.nextBoolean()) {
             throw new Exception();
+        }
+        else{
+            return null;
         }
     }
 
