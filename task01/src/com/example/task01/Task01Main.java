@@ -10,7 +10,9 @@ public class Task01Main {
     }
 
     static void codeWithNPE() {
-        throw new NullPointerException();
+        //throw new NullPointerException();
         //throw null;
+        String str = null;
+        str.length();
     }
 }
