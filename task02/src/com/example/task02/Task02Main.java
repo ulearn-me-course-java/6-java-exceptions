@@ -14,7 +14,6 @@ public class Task02Main {
 
     static String getSeason(int monthNumber) {
         if(monthNumber < 1 || monthNumber > 12){
-            IllegalArgumentException e = new IllegalArgumentException();
             throw new IllegalArgumentException("monthNumber " + monthNumber + " is invalid, month number should be between 1..12");
         }
             if(monthNumber == 12 || monthNumber < 3) return "зима";
