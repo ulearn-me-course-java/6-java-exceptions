@@ -8,12 +8,8 @@ public class Task06Main {
     }
 
     void printMethodName() {
-        String nullString = null;
-        try {
-            nullString.length();
-        } catch (Exception exception) {
-            System.out.print(exception.getStackTrace()[1].getMethodName());
-        }
+        Throwable throwable = new Throwable();
+        System.out.print(throwable.getStackTrace()[1].getMethodName());
     }
 
 }
