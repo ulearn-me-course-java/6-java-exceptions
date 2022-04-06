@@ -11,5 +11,9 @@ public class Task01Main {
 
     static void codeWithNPE() {
         //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
+         String s1 = "";
+            String s2 = "";
+            String s3 = s1 + s2;
+            throw new NullPointerException("Impossible operation !");
     }
 }
