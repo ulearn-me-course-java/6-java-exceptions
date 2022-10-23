@@ -11,6 +11,8 @@ public class Task06Main {
 
     void printMethodName() {
         //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
+        StackTraceElement ste = Thread.currentThread().getStackTrace()[2];
+        System.out.printf("%s", ste.getMethodName());
     }
 
 }
