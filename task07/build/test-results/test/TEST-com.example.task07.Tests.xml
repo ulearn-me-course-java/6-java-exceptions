@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.task07.Tests" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-11-03T17:55:29" hostname="MacBook-Air-Ila.local" time="0.434">
+  <properties/>
+  <testcase name="testCountExceptions_none" classname="com.example.task07.Tests" time="0.425"/>
+  <testcase name="testCountExceptions_checked" classname="com.example.task07.Tests" time="0.006"/>
+  <testcase name="testCountExceptions_unchecked" classname="com.example.task07.Tests" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
