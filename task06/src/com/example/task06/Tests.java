@@ -30,5 +30,4 @@ public class Tests {
         actual = actual.replaceAll("\n", "");
         Assert.assertEquals("testPrintMethodName", actual);
     }
-
 }
