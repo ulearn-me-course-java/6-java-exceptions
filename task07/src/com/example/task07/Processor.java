@@ -6,5 +6,4 @@ public class Processor {
         //todo вы можете заменить реализацию этого метода для ручного дебага
         return null;
     }
-
 }
