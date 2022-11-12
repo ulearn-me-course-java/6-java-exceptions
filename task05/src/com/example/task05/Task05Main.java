@@ -3,13 +3,20 @@ package com.example.task05;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.FileNotFoundException;
 
 public class Task05Main {
-    public static void main(String[] args) throws IOException {
-        String pathToFile = args[0]; // "/home/user/file.txt"
+    public static void main(String[] args) {
+        String pathToFile = args[0];
 
-        String s = readFile(pathToFile);
-        System.out.println(s);
+        try {
+            String str = readFile(pathToFile);
+            System.out.println(str);
+        } catch (FileNotFoundException e) {
+            System.out.printf(String.format("файл \"%s\" не найден\n", pathToFile));
+        } catch (IOException e) {
+            System.out.printf(String.format("произошла ошибка при чтении файла \"%s\"", pathToFile));
+        }
     }
 
     public static String readFile(String pathToFile) throws IOException {
