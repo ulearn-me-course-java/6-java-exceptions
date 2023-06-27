@@ -1,16 +1,18 @@
 package com.example.task03;
 
+import java.io.*;
+import java.util.Scanner;
+
 public class Task03Main {
-    public static void main(String[] args) {
-        //здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        throwCheckedException();
-         */
+    public static void main(String[] args){
+        try {
+            throwCheckedException();
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
     }
-
-    //todo напишите здесь свою корректную реализацию задания
-    public static void throwCheckedException() {
-
+    public static void throwCheckedException() throws FileNotFoundException {
+        File file = new File("test.txt");
+        Scanner scanner = new Scanner(file);
     }
 }
