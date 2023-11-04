@@ -7,7 +7,6 @@ public class Task07Main {
     public static final String NONE = "none";
 
     public static void main(String[] args) {
-
     }
 
     public Processor processor;
