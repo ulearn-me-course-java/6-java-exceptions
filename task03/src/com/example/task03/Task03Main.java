@@ -1,7 +1,7 @@
 package com.example.task03;
 
 public class Task03Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         Tests tests = new Tests();
         tests.testThrowCheckedException();
     }
