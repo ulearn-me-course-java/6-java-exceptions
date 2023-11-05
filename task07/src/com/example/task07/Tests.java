@@ -6,7 +6,7 @@ import org.mockito.Mockito;
 
 import java.io.IOException;
 
-public class Tests {
+public class  Tests {
 
     @Test
     public void testCountExceptions_unchecked() throws Exception {
