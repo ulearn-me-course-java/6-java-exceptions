@@ -19,7 +19,7 @@ public class Task07Main {
         try {
             processor.process();
             return NONE;
-        } catch (RuntimeException e) {
+        } catch (Error | RuntimeException e) {
             return UNCHECKED;
         }catch (Exception e) {
             return CHECKED;

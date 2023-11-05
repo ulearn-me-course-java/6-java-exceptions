@@ -8,7 +8,7 @@ public class Task06Main {
     void printMethodName() {
         try {
             throw new RuntimeException();
-        }catch (RuntimeException e){
+        } catch (RuntimeException e) {
             System.out.println(e.getStackTrace()[1].getMethodName());
         }
     }

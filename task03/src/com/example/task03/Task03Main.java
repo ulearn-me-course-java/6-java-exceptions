@@ -10,6 +10,7 @@ public class Task03Main {
         Tests tests = new Tests();
         tests.testThrowCheckedException();
 
+
     }
 
     //todo напишите здесь свою корректную реализацию задания

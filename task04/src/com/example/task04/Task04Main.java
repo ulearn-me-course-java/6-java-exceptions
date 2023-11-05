@@ -13,7 +13,7 @@ public class Task04Main {
 
     static String getSeason(int monthNumber) {
         if (monthNumber>12||monthNumber<=0){
-            throw new  MyException(String.format("monthNumber %s is invalid, month number should be between 1..12",monthNumber));
+            throw new MyException(String.format("monthNumber %s is invalid, month number should be between 1..12",monthNumber));
         }
         String res = "весна";
         if (monthNumber==1||monthNumber==2||monthNumber==12){

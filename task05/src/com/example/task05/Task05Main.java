@@ -6,17 +6,15 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class Task05Main {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         String pathToFile = args[0];
         try {
             String s = readFile(pathToFile);
             System.out.println(s);
-        }
-        catch (FileNotFoundException e){
-            System.out.printf("файл \"%s\" не найден\n",pathToFile);
-        }
-        catch (IOException e){
-            System.out.printf("произошла ошибка при чтении файла \"%s\"\n",pathToFile);
+        } catch (FileNotFoundException e) {
+            System.out.printf("файл \"%s\" не найден\n", pathToFile);
+        } catch (IOException e) {
+            System.out.printf("произошла ошибка при чтении файла \"%s\"\n", pathToFile);
         }
     }
 
