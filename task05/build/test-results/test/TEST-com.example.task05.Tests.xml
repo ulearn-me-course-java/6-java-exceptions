@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.task05.Tests" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-11-05T14:21:40" hostname="User-PC" time="0.195">
+  <properties/>
+  <testcase name="testMainContainsTwoCatchClauses" classname="com.example.task05.Tests" time="0.186"/>
+  <testcase name="testCatchFileNotFound" classname="com.example.task05.Tests" time="0.0"/>
+  <testcase name="testMainNotDeclareThrows" classname="com.example.task05.Tests" time="0.008"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
