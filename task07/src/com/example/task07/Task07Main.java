@@ -7,18 +7,26 @@ public class Task07Main {
     public static final String NONE = "none";
 
     public static void main(String[] args) {
+        getExceptionType();
+
     }
 
-    public Processor processor;
+    public static Processor processor;
 
-    public String getExceptionType() {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-        try {
-            processor.process(); //todo вы можете заменить реализацию этого метода для ручного дебага
-        } catch (Exception e) {
-
+    public static String getExceptionType() {
+        try
+        {
+            processor.process();
         }
-        return null;
+        catch (RuntimeException ex)
+        {
+            return UNCHECKED;
+        }
+        catch (Exception ex)
+        {
+            return CHECKED;
+        }
+        return NONE;
     }
 
 }

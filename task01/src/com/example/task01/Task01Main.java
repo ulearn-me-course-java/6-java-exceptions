@@ -7,9 +7,12 @@ public class Task01Main {
         /*
         codeWithNPE();
          */
+        codeWithNPE();
     }
 
-    static void codeWithNPE() {
+    static void codeWithNPE(){
+        String exc = null;
+        int length = exc.length();
         //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
     }
 }
