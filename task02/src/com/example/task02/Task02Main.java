@@ -3,11 +3,7 @@ package com.example.task02;
 public class Task02Main {
 
     public static void main(String[] args) {
-        //здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-
-        System.out.println(getSeason(-5));
-
+        System.out.println(getSeason(10));
     }
 
     static String getSeason(int monthNumber) {
