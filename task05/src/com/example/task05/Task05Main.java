@@ -1,15 +1,22 @@
 package com.example.task05;
 
 import java.io.BufferedReader;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
 public class Task05Main {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         String pathToFile = args[0]; // "/home/user/file.txt"
-
-        String s = readFile(pathToFile);
-        System.out.println(s);
+        try {
+            String s = readFile(pathToFile);
+            System.out.println(s);
+        } catch(FileNotFoundException t){
+            throw new RuntimeException(String.format("файл %s не найден", pathToFile), t);
+        }
+        catch (IOException e) {
+            throw new RuntimeException(String.format("произошла ошибка при чтении файла " + pathToFile), e);
+        }
     }
 
     public static String readFile(String pathToFile) throws IOException {
