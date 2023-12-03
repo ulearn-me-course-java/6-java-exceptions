@@ -1,5 +1,7 @@
 package com.example.task07;
 
+import java.util.logging.Logger;
+
 public class Task07Main {
 
     public static final String CHECKED = "checked";
@@ -11,14 +13,17 @@ public class Task07Main {
 
     public Processor processor;
 
-    public String getExceptionType() {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-        try {
-            processor.process(); //todo вы можете заменить реализацию этого метода для ручного дебага
-        } catch (Exception e) {
+    public String getExceptionType() throws Exception{
 
+        try {
+            processor.process();
+        } catch (RuntimeException | Error un) {
+            return Task07Main.UNCHECKED;
+        } catch (Throwable ch) {
+            return Task07Main.CHECKED;
         }
-        return null;
+
+        return Task07Main.NONE;
     }
 
 }
