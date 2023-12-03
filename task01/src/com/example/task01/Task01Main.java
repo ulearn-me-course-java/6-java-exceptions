@@ -10,6 +10,8 @@ public class Task01Main {
     }
 
     static void codeWithNPE() {
+        Object nullRef = null;
+        nullRef.toString();
         //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
     }
 }
