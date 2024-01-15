@@ -14,13 +14,13 @@ public class Task07Main {
     public String getExceptionType() {
         try {
             processor.process();
-        } catch (RuntimeException ex) {
-            return "unchecked";
         } catch (Exception e) {
-            return "checked";
+            if (e instanceof RuntimeException) {
+                return UNCHECKED;
+            } else {
+                return CHECKED;
+            }
         }
-
-        return "none";
+        return NONE;
     }
-
 }

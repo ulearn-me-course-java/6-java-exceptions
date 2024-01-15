@@ -6,8 +6,9 @@ public class Task06Main {
     }
 
     void printMethodName() {
-        StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
-        System.out.print(stackTrace[2].getMethodName());
+        StackTraceElement[] stackTraceElements = Thread.currentThread().getStackTrace(); //стек вызовов
+        String callingMethod = stackTraceElements[2].getMethodName();
+        System.out.print(callingMethod);
+        //System.out.println("Метод, вызвавший printMethodName(): " + callingMethod);
     }
-
 }
