@@ -2,15 +2,14 @@ package com.example.task03;
 
 public class Task03Main {
     public static void main(String[] args) {
-        //здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        throwCheckedException();
-         */
+        try {
+            throwCheckedException();
+        } catch (Exception e) {
+            System.out.println("Поймано checked исключение: " + e.getMessage());
+        }
     }
 
-    //todo напишите здесь свою корректную реализацию задания
-    public static void throwCheckedException() {
-
+    static void throwCheckedException() throws Exception {
+        throw new Exception("Something goes wrong");
     }
 }
