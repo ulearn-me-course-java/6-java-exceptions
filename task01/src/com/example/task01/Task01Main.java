@@ -7,9 +7,11 @@ public class Task01Main {
         /*
         codeWithNPE();
          */
+        codeWithNPE();
     }
 
     static void codeWithNPE() {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
+        Object s=null;
+        System.out.println(s.toString());
     }
 }
