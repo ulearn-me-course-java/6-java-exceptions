@@ -11,7 +11,7 @@ public class Task06Main {
 
     void printMethodName() {
         try {
-            throw new Exception("exception");
+            throw new Exception("Hahaha :D");
         } catch (Exception exception) {
             System.out.print(exception.getStackTrace()[1].getMethodName());
         }
